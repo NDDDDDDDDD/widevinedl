@@ -6,7 +6,7 @@ import os
 dir = r"C:\Users\46735\Documents\downey"  # this directory should include downey.exe
 mpd = input("enter MPD url: ")
 mpdfile = urlopen(f"{mpd}")
-with open(r'C:\Users\46735\Documents\downey\manifest.mpd','wb') as output:  # this has to be in the folder as downey.exe, shall be mpd file shall be named manifest.mpd
+with open(r'C:\Users\46735\Documents\downey\manifest.mpd','wb') as output:  # this has to be in the folder as downey.exe, mpd file shall be named manifest.mpd
   output.write(mpdfile.read())  # downloads manifest.mpd
 licenseurl = input("enter license url: ")
 cmdd = f"downey.exe --lic-server {licenseurl}"
